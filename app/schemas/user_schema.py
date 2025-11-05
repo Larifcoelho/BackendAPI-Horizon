@@ -21,4 +21,3 @@ class UserResponse(BaseModel):
 
     class Config:
         orm_mode = True
-
