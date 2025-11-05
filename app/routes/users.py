@@ -37,3 +37,4 @@ def reset_password(request: ResetPasswordRequest, db: Session = Depends(get_db))
     if not success:
         raise HTTPException(status_code=400, detail="Token inválido ou expirado.")
     return {"message": "Senha redefinida com sucesso!"}
+
